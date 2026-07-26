@@ -1,0 +1,48 @@
+Arctic Shift Integration Report
+Generated: 2026-05-25 16:38
+============================================================
+Source file: r_watches_posts.jsonl
+  Total posts in file: 836,170
+  JSON parse errors:   0
+
+Filtering pipeline applied:
+  - Removed/moderated posts excluded (removed_by_category set)
+  - Bot/AutoModerator authors excluded
+  - Editorial roundup titles excluded
+  - html.unescape() applied to title and selftext
+  - Single-brand title match required
+  - Single-brand exclusion filter applied
+  - Word count filter: 25–1000 words
+  - Date window: 2020-01-01 – 2026-05-31
+  - Deduplication: post ID checked against existing 6,347 posts
+  - Brand cap: 1000 posts per brand maximum
+
+============================================================
+BRAND RESULTS
+Brand                     Before     New   After  Status
+------------------------------------------------------------
+  ALangeSohne                  454       0     454  BELOW MIN 500
+  AudemarsPiguet               900       0     900  ABOVE MIN
+  FranckMuller                 249       0     249  BELOW MIN 500
+  Hublot                       378       0     378  BELOW MIN 500
+  IWCSchaffhausen             1000       0    1000  TARGET MET
+  MBandF                        96       0      96  BELOW MIN 500
+  PatekPhilippe               1000       0    1000  TARGET MET
+  RichardMille                 294       0     294  BELOW MIN 500
+  VacheronConstantin           976       0     976  ABOVE MIN
+  rolex                       1000       0    1000  TARGET MET
+------------------------------------------------------------
+  TOTAL                       6347       0    6347
+
+Processing stats:
+  lines                         836,170
+  skipped_removed               294,150
+  skipped_bot                     3,106
+  skipped_editorial                 805
+  skipped_no_brand              511,584
+  skipped_multi_brand                 0
+  skipped_word_count              2,526
+  skipped_date                        0
+  skipped_duplicate               3,009
+  skipped_target_met             20,990
+  accepted                            0
